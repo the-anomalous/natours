@@ -1,0 +1,167 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+.header{
+  position: relative;
+  height: 95vh;
+  background-image: 
+    linear-gradient(
+      to right bottom, 
+      rgba(126, 213, 111, 0.6),
+      rgba(39, 180, 133, 0.6)
+    ),
+    url('../assets/images/hero.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+.logo-box{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.logo{
+  height: 35px;
+}
+
+.text-box{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-box{
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+}
+
+.heading-main{
+  display: block;
+  font-size: 60px;
+  letter-spacing: 30px;
+  font-weight: 400;
+
+  animation: moveInLeft 1s ease-out;
+}
+
+.heading-sub{
+  position: relative;
+  left: -4px;
+  display: block;
+  font-size: 20px;
+  letter-spacing: 15px;
+  font-weight: 400;
+
+  animation: moveInRight 1s ease-out;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  color: #777;
+  transition: all .5s;
+  position: relative;
+}
+
+.btn-white{
+  background-color: #fff;
+  padding: 16px 42px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  animation: moveInBottom 1s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+.btn-white:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+}
+
+.btn-white:active{
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.btn::after{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all .5s;
+  border-radius: 100px;
+}
+
+.btn-white::after{
+  background-color: #fff;
+}
+
+.btn:hover::after{
+  transform: scaleX(1.6) scaleY(1.4);
+  opacity: 0;
+}
+
+/* animations keyframe rule */
+
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80%{
+    transform: translateX(-10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80%{
+    transform: translateX(10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0%{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
