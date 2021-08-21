@@ -3,3 +3,21 @@
   background-color: $color-light-grey-1;
   margin-top: -20vh;
 }
+
+.section-features{
+  background-image: linear-gradient(to right bottom,
+    rgba(126, 213, 111, 0.6),
+    rgba(39, 180, 133, 0.6)),
+  url('../../assets/images/nat-4.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20rem 0;
+  margin-top: -6rem;
+
+  transform: skewY(-5deg);
+
+  & > * {
+    transform: skewY(5deg);
+  }
+}

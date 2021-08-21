@@ -4,9 +4,9 @@ import HomePage from './pages/home.page'
 
 const App = () => {
   return (
-    <main>
+    <>
       <HomePage/>
-    </main>
+    </>
   )
 }
 
