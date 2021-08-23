@@ -5,14 +5,19 @@
   cursor: pointer;
   position: relative;
   background-color: transparent;
+  padding: 1.6rem 4.2rem;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   
   &--white {
     color: $color-dark-grey;
     background-color: $color-white;
-    padding: 1.6rem 4.2rem;
-    border-radius: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+  }
+
+  &--green {
+    color: $color-white;
+    background-color: $color-primary-dark;
   }
 
   &--animated {
@@ -20,12 +25,12 @@
     animation-fill-mode: backwards;
   }
 
-  &--white:hover {
+  &:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
   }
 
-  &--white:active {
+  &:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
   }
@@ -47,6 +52,10 @@
     background-color: $color-white;
   }
 
+  &--green::after {
+    background-color: $color-primary-dark;
+  }
+
   &:hover::after {
     transform: scaleX(1.6) scaleY(1.4);
     opacity: 0;
@@ -59,8 +68,7 @@
   border-radius: 3px;
   color: $color-primary;
   border-bottom: 1px solid $color-primary;
-  transition: all .2s;
-  transition-delay: .1s;
+  transition: all .2s linear .1s;
   
   &:hover{
     font-weight: 400;
