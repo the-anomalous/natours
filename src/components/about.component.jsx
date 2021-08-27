@@ -1,4 +1,6 @@
 import React from 'react'
+import ButtonText from './buttons/button-text.component'
+
 import photo1 from '../assets/images/nat-1-large.jpg'
 import photo2 from '../assets/images/nat-2-large.jpg'
 import photo3 from '../assets/images/nat-3-large.jpg'
@@ -27,9 +29,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minus officiis repellendus porro saepe eum quod, deleniti animi.
           </p>
           
-          <button className='btn btn-text' >
-            Learn More &rarr;
-          </button>
+          <ButtonText>Learn More</ButtonText>
         </div>
         <div className="col-1-of-2">
           <div className="composition">

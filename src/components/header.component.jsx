@@ -1,5 +1,6 @@
 import React from 'react'
 import LogoWhite from '../assets/logos/logo-white.png'
+import ButtonWhite from './buttons/button-white.component'
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
           <span className='heading-box--main'>outdoors</span>
           <span className='heading-box--sub'>is where life happens</span>
         </h1>
-        <button className="btn btn--white btn--animated">discover our tours</button>
+        <ButtonWhite className="btn--animated">discover our tours</ButtonWhite>
       </div>
     </header>
   )

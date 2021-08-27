@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({children}) => {
+const TourCard = ({children}) => {
   return (
     <div className="col-1-of-3">
       <div className="card">
@@ -10,4 +10,4 @@ const Card = ({children}) => {
   )
 }
 
-export default Card
+export default TourCard

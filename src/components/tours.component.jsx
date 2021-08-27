@@ -1,9 +1,11 @@
 import React from 'react'
-import Card from './card.component'
+import TourCard from './cards/tour-card.component'
+import ButtonGreen from './buttons/button-green.component'
+import ButtonWhite from './buttons/button-white.component'
 
 const Tours = () => {
   return (
-    <section className="tours">
+    <section className="section-tours">
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">
           most popular tours
@@ -11,7 +13,7 @@ const Tours = () => {
       </div>
 
       <div className="row">
-        <Card>
+        <TourCard>
           <div className="card__slide card__slide--back card__slide--back--1">
             <div className="card__cta">
               <div className="price__box">
@@ -19,7 +21,7 @@ const Tours = () => {
                 <p className="price__box-value">$297</p>
               </div>
 
-              <button className="btn btn--white">Book Now</button>
+              <ButtonWhite>Book Now</ButtonWhite>
             </div>
           </div>
 
@@ -42,9 +44,9 @@ const Tours = () => {
               </ul>
             </div>
           </div>
-        </Card>
+        </TourCard>
 
-        <Card>
+        <TourCard>
           <div className="card__slide card__slide--back card__slide--back--2">
             <div className="card__cta">
               <div className="price__box">
@@ -52,7 +54,7 @@ const Tours = () => {
                 <p className="price__box-value">$497</p>
               </div>
 
-              <button className="btn btn--white">Book Now</button>
+              <ButtonWhite>Book Now</ButtonWhite>
             </div>
           </div>
 
@@ -75,9 +77,9 @@ const Tours = () => {
               </ul>
             </div>
           </div>
-        </Card>
+        </TourCard>
 
-        <Card>
+        <TourCard>
           <div className="card__slide card__slide--back card__slide--back--3">
             <div className="card__cta">
               <div className="price__box">
@@ -85,7 +87,7 @@ const Tours = () => {
                 <p className="price__box-value">$897</p>
               </div>
 
-              <button className="btn btn--white">Book Now</button>
+              <ButtonWhite>Book Now</ButtonWhite>
             </div>
           </div>
 
@@ -108,11 +110,11 @@ const Tours = () => {
               </ul>
             </div>
           </div>
-        </Card>
+        </TourCard>
       </div>
 
       <div className="u-center-text">
-        <button className="btn btn--green">discover our tours</button>
+        <ButtonGreen>discover our tours</ButtonGreen>
       </div>
     </section>
   )
