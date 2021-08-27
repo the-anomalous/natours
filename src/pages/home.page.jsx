@@ -4,6 +4,7 @@ import About from '../components/about.component'
 import Features from '../components/features.component'
 import Tours from '../components/tours.component'
 import Stories from '../components/stories.component'
+import Booking from '../components/booking.component'
 
 const HomePage = () => {
   return (
@@ -13,7 +14,8 @@ const HomePage = () => {
         <About />
         <Features />
         <Tours />
-        <Stories/>
+        <Stories />
+        <Booking/>
       </main>
     </>
   )
