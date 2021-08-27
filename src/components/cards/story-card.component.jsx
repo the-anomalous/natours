@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TestimonyCard = ({image, caption, children}) => {
+const StoryCard = ({image, caption, children}) => {
   return (
     <div className="row">
       <div className="story">
@@ -18,4 +18,4 @@ const TestimonyCard = ({image, caption, children}) => {
   )
 }
 
-export default TestimonyCard
+export default StoryCard

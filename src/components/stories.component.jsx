@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TestimonyCard from './cards/testimony-card.component'
+import StoryCard from './cards/story-card.component'
 import ButtonText from './buttons/button-text.component'
 import BackgroundVideo from './bg-video.component'
 
@@ -17,7 +17,7 @@ const Stories = () => {
         </h2>
       </div>
 
-      <TestimonyCard image={Image8} caption='Mary Smith'>
+      <StoryCard image={Image8} caption='Mary Smith'>
         <div className="story__text">
           <h3 className="heading-tertiary">
             I had the best ever week ith my family
@@ -27,9 +27,9 @@ const Stories = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vero dolore nisi. Impedit voluptates minus odit, accusantium possimus eos amet? Consectetur laudantium nulla iste perferendis quam omnis provident cupiditate fugit qui possimus nemo voluptatibus veniam eius voluptatem, ipsa exercitationem?
           </p>
         </div>
-      </TestimonyCard>
+      </StoryCard>
 
-      <TestimonyCard image={Image9} caption='Jason Wilson'>
+      <StoryCard image={Image9} caption='Jason Wilson'>
         <div className="story__text">
           <h3 className="heading-tertiary">
             Wow! My life is completely different now
@@ -39,7 +39,7 @@ const Stories = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vero dolore nisi. Impedit voluptates minus odit, accusantium possimus eos amet? Consectetur laudantium nulla iste perferendis quam omnis provident cupiditate fugit qui possimus nemo voluptatibus veniam eius voluptatem, ipsa exercitationem?
           </p>
         </div>
-      </TestimonyCard>
+      </StoryCard>
 
       <div className="u-center-text">
         <ButtonText>Read all stories</ButtonText>
