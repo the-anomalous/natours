@@ -1,5 +1,6 @@
 import React from 'react'
 import ButtonText from './buttons/button-text.component'
+import Heading2 from './headings/heading2.component'
 
 import photo1 from '../assets/images/nat-1-large.jpg'
 import photo2 from '../assets/images/nat-2-large.jpg'
@@ -8,11 +9,10 @@ import photo3 from '../assets/images/nat-3-large.jpg'
 const About = () => {
   return (
     <section className='section-about'>
-      <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">
-          exciting tours for adventurous people
-        </h2>
-      </div>
+      <Heading2 className="u-center-text u-margin-bottom-huge">
+        exciting tours for adventurous people
+      </Heading2>
+
       <div className="row">
         <div className="col-1-of-2">
           <h3 className="heading-tertiary u-margin-bottom-small">

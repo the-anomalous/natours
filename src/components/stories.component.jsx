@@ -3,6 +3,7 @@ import React from 'react'
 import StoryCard from './cards/story-card.component'
 import ButtonText from './buttons/button-text.component'
 import BackgroundVideo from './bg-video.component'
+import Heading2 from './headings/heading2.component'
 
 import Image8 from '../assets/images/nat-8.jpg'
 import Image9 from '../assets/images/nat-9.jpg'
@@ -11,11 +12,10 @@ const Stories = () => {
   return (
     <section className='section-stories'>
       <BackgroundVideo/>
-      <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">
-          we make people genuinely happy
-        </h2>
-      </div>
+
+      <Heading2 className="u-center-text u-margin-bottom-huge">
+        we make people genuinely happy
+      </Heading2>
 
       <StoryCard image={Image8} caption='Mary Smith'>
         <div className="story__text">

@@ -1,18 +1,17 @@
 import React from 'react'
 import TourCard from './cards/tour-card.component'
 import ButtonGreen from './buttons/button-green.component'
-import ButtonWhite from './buttons/button-white.component'
+import Heading2 from './headings/heading2.component'
+import Popup from './popup.component'
 
 const Tours = () => {
   return (
     <section className="section-tours">
-      <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">
-          most popular tours
-        </h2>
-      </div>
+      <Heading2 className="u-center-text u-margin-bottom-huge">
+        most popular tours
+      </Heading2>
 
-      <div className="row">
+      <div className="row" id="section-tours">
         <TourCard>
           <div className="card__slide card__slide--back card__slide--back--1">
             <div className="card__cta">
@@ -21,7 +20,7 @@ const Tours = () => {
                 <p className="price__box-value">$297</p>
               </div>
 
-              <ButtonWhite>Book Now</ButtonWhite>
+              <a href="#popup" className='btn btn--white'>Book Now</a>
             </div>
           </div>
 
@@ -54,7 +53,8 @@ const Tours = () => {
                 <p className="price__box-value">$497</p>
               </div>
 
-              <ButtonWhite>Book Now</ButtonWhite>
+              <a href="#popup" className='btn btn--white'>Book Now</a>
+
             </div>
           </div>
 
@@ -87,7 +87,8 @@ const Tours = () => {
                 <p className="price__box-value">$897</p>
               </div>
 
-              <ButtonWhite>Book Now</ButtonWhite>
+              <a href="#popup" className='btn btn--white'>Book Now</a>
+
             </div>
           </div>
 
@@ -116,6 +117,8 @@ const Tours = () => {
       <div className="u-center-text">
         <ButtonGreen>discover our tours</ButtonGreen>
       </div>
+
+      <Popup />
     </section>
   )
 }
