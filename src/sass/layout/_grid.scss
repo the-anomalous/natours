@@ -4,6 +4,14 @@
 
   @include clearfix;
 
+  @include mediaQuery(tab-port) {
+    max-width: 70rem;
+  }
+   
+  @include mediaQuery(phone) {
+    max-width: 50rem;
+  }
+
   [class^="col-"] {
     float: left;
     padding: .5rem 0;
@@ -11,11 +19,24 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include mediaQuery(tab-port) {
+        margin-right: 0;
+      }
+    }
+
+    @include mediaQuery(tab-port) {
+      width: 100% !important;
+      margin-bottom: $gutter-vertical-small;
     }
   }
 
   &:not(:last-child) {
     margin-bottom: $gutter-horizontal;
+
+    @include mediaQuery(tab-port) {
+      margin-bottom: 4rem;  
+    }
   }
 
   .col-1-of-2 {

@@ -2,22 +2,43 @@
   padding: 10rem;
   background-color: $color-dark-grey-3;
 
+  @include mediaQuery(tab-port) {
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+
   &__logo-box{
     text-align: center;
     margin-bottom: 6rem;
+
+    @include mediaQuery(tab-port) {
+      margin-bottom: 3rem;    
+    }
   }
 
   &__logo{
     width: 15rem;
     height: auto;
+
+    @include mediaQuery(tab-port) {
+      width: 13rem;
+    }
   }
 
   &__navigation{
     display: inline-block;
+
+    @include mediaQuery(tab-port) {
+      width: 100%;
+    }
     
     .list{
       border-top: 1px solid $color-dark-grey-2;
       padding: 1rem 0;
+
+      @include mediaQuery(tab-port) {
+        text-align: center;
+      }
 
       &__item {
         display: inline-block;
@@ -56,5 +77,10 @@
     width: 88%;
     float: right;
     font-size: 1.5rem;
+
+    @include mediaQuery(tab-port) {
+      width: 100%;  
+      text-align: center;
+    }
   }
 }

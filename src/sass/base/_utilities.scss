@@ -4,6 +4,10 @@
 
 .u-margin-bottom-huge{
   margin-bottom: 8rem;
+  
+  @include mediaQuery(tab-port) {
+    margin-bottom: 4rem;
+  }
 }
 
 .u-margin-bottom-big{
