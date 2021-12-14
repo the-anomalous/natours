@@ -1,6 +1,10 @@
 .form{
   &__group:not(:last-child){
     margin-bottom: 4rem;
+
+    @include mediaQuery(phone) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__input{
@@ -15,6 +19,10 @@
     color: $color-dark-grey;
     box-shadow: 0 .8rem 2rem rgba($color-black, .2);
     border-bottom: 3px solid transparent;
+
+    @include mediaQuery(phone) {
+     width: 100%;  
+    }
 
 
     &:focus{

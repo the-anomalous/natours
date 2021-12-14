@@ -5,11 +5,11 @@
   @include clearfix;
 
   @include mediaQuery(tab-port) {
-    max-width: 70rem;
+    max-width: 65rem;
   }
    
   @include mediaQuery(phone) {
-    max-width: 50rem;
+    max-width: 40rem;
   }
 
   [class^="col-"] {
