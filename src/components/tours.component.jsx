@@ -13,17 +13,6 @@ const Tours = () => {
 
       <div className="row" id="section-tours">
         <TourCard>
-          <div className="card__slide card__slide--back card__slide--back--1">
-            <div className="card__cta">
-              <div className="price__box">
-                <p className="price__box-only">only</p>
-                <p className="price__box-value">$297</p>
-              </div>
-
-              <a href="#popup" className='btn btn--white'>Book Now</a>
-            </div>
-          </div>
-
           <div className="card__slide card__slide--front">
             <div className="card__picture card__picture--1" />
 
@@ -43,21 +32,20 @@ const Tours = () => {
               </ul>
             </div>
           </div>
-        </TourCard>
 
-        <TourCard>
-          <div className="card__slide card__slide--back card__slide--back--2">
+          <div className="card__slide card__slide--back card__slide--back--1">
             <div className="card__cta">
               <div className="price__box">
                 <p className="price__box-only">only</p>
-                <p className="price__box-value">$497</p>
+                <p className="price__box-value">$297</p>
               </div>
 
               <a href="#popup" className='btn btn--white'>Book Now</a>
-
             </div>
           </div>
+        </TourCard>
 
+        <TourCard>
           <div className="card__slide card__slide--front">
             <div className="card__picture card__picture--2" />
 
@@ -77,21 +65,21 @@ const Tours = () => {
               </ul>
             </div>
           </div>
-        </TourCard>
 
-        <TourCard>
-          <div className="card__slide card__slide--back card__slide--back--3">
+          <div className="card__slide card__slide--back card__slide--back--2">
             <div className="card__cta">
               <div className="price__box">
                 <p className="price__box-only">only</p>
-                <p className="price__box-value">$897</p>
+                <p className="price__box-value">$497</p>
               </div>
 
               <a href="#popup" className='btn btn--white'>Book Now</a>
 
             </div>
           </div>
+        </TourCard>
 
+        <TourCard>
           <div className="card__slide card__slide--front">
             <div className="card__picture card__picture--3" />
 
@@ -109,6 +97,18 @@ const Tours = () => {
                 <li>Sleep in provide tents</li>
                 <li>Difficulty: hard</li>
               </ul>
+            </div>
+          </div>
+
+          <div className="card__slide card__slide--back card__slide--back--3">
+            <div className="card__cta">
+              <div className="price__box">
+                <p className="price__box-only">only</p>
+                <p className="price__box-value">$897</p>
+              </div>
+
+              <a href="#popup" className='btn btn--white'>Book Now</a>
+
             </div>
           </div>
         </TourCard>

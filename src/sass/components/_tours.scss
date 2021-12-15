@@ -160,20 +160,45 @@
       }
     }
   }
+}
 
+@include mediaQuery(tab-land) {
+  .card {
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 .8rem 1.8rem rgba($color-black, .2);
 
-  // @include mediaQuery(tab-land) {
-  //   .card {
-  //     height: auto;
+    &__slide {
+      position: relative;
+      top: 0;
+      left: 0;
+      box-shadow: 0 0 0;
 
-  //     &__slide {
-  //       position: relative;
-  //       top: 0;
-  //       left: 0;
-  //       border-radius: 4px;
-  //       box-shadow: 0 .8rem 1.8rem rgba($color-black, .2);
+      &--back {
+        transform: rotateX(0deg);
+        height: 23rem;
+        clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+        border-radius: 0;
+      }
+    }
 
-  //     }
-  //   }
-  // }
+    &:hover &__slide--front {
+      transform: rotateY(0deg);
+    }
+
+    &:hover &__slide--back {
+      transform: rotateY(0deg);
+    }
+
+    &__cta {
+      .price__box {
+        margin-bottom: 3rem;
+        padding-top: .5rem;
+
+        &-value {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
 }
