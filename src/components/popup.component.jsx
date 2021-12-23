@@ -9,8 +9,12 @@ const Popup = () => {
     <div className='popup' id='popup'>
       <div className="popup__content">
         <div className="popup__right">
-          <img src={Nat8} alt="tour img" className='popup__img' />
-          <img src={Nat9} alt="tour img" className='popup__img'/>
+          <div className="popup__img_container--1">
+            <img src={Nat8} alt="tour img" className='popup__img' />
+          </div>
+          <div className="popup__img_container--2">
+            <img src={Nat9} alt="tour img" className='popup__img' />
+          </div>
         </div>
 
         <div className="popup__left">
@@ -26,7 +30,9 @@ const Popup = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda accusantium, doloremque odit, ea ab beatae amet, alias iusto exercitationem asperiores necessitatibus voluptas error laboriosam. Impedit eaque at eius ipsa quaerat ipsam reiciendis a praesentium, vero inventore rerum fuga id nesciunt natus sequi debitis culpa accusantium ducimus dicta cumque consequatur explicabo velit illo? Ut, officiis unde quisquam officia quasi minima distinctio dolorum beatae est commodi doloribus sapiente consectetur culpa quod! Facere laudantium tempore nisi repudiandae accusantium officia veritatis quibusdam consequuntur eveniet.
           </div>
 
-          <BtnGreen>Book Now</BtnGreen>
+          <a href="#section-book" className="popup__section_link">
+            <BtnGreen> Book Now </BtnGreen>
+          </a>
         </div>
         <a href="#section-tours" className='popup__close'>&times;</a>
       </div>
