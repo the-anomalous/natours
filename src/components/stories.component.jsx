@@ -17,7 +17,7 @@ const Stories = () => {
         we make people genuinely happy
       </Heading2>
 
-      <StoryCard image={Image8} caption='Mary Smith'>
+      <StoryCard img={Image8} caption='Mary Smith'>
         <div className="story__text">
           <h3 className="heading-tertiary">
             I had the best ever week ith my family
@@ -29,7 +29,7 @@ const Stories = () => {
         </div>
       </StoryCard>
 
-      <StoryCard image={Image9} caption='Jason Wilson'>
+      <StoryCard img={Image9} caption='Jason Wilson'>
         <div className="story__text">
           <h3 className="heading-tertiary">
             Wow! My life is completely different now

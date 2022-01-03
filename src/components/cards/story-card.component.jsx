@@ -1,11 +1,14 @@
 import React from 'react'
 
-const StoryCard = ({image, caption, children}) => {
+const StoryCard = ({ img, caption, children }) => {
   return (
     <div className="row">
       <div className="story">
         <figure className="story__shape">
-          <img src={image} alt={`${caption} testimony`} className='story__image' />
+          <img
+            src={img}
+            alt={`${caption} testimony`}
+            className='story__image' />
           <figcaption className='story__caption'>
             {caption}
           </figcaption>

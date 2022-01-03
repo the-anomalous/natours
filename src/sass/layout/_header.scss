@@ -4,12 +4,19 @@
   background-image: linear-gradient(to right bottom,
       rgba(126, 213, 111, 0.6),
       rgba(39, 180, 133, 0.6)),
-    url('../../assets/images/hero.jpg');
+    url('../../assets/images/hero-small.jpg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
+  @include highResolution {
+    background-image: linear-gradient(to right bottom,
+      rgba(126, 213, 111, 0.6),
+      rgba(39, 180, 133, 0.6)),
+    url('../../assets/images/hero.jpg');
+  }
 
   @include mediaQuery(tab-port) {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

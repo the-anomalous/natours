@@ -1,6 +1,6 @@
 import React from 'react'
-import Video1 from '../assets/videos/video.mp4'
-import Video2 from '../assets/videos/video.webm'
+import Video1 from '../assets/videos/video-small.mp4'
+import Video2 from '../assets/videos/video-small.webm'
 
 const BackgroundVideo = () => {
   return (

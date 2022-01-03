@@ -62,21 +62,42 @@
       background-image: linear-gradient(to right bottom,
           rgba($color-secondary-light, .85),
           rgba($color-secondary-dark, .85)),
-        url('../../assets/images/nat-5.jpg');
+        url('../../assets/images/nat-5-small.jpg');
+
+      @include highResolution {
+        background-image: linear-gradient(to right bottom,
+            rgba($color-secondary-light, .85),
+            rgba($color-secondary-dark, .85)),
+          url('../../assets/images/nat-5.jpg');
+      }
     }
 
     &--2 {
       background-image: linear-gradient(to right bottom,
           rgba($color-primary-light, .85),
           rgba($color-primary-dark, .85)),
-        url('../../assets/images/nat-6.jpg');
+        url('../../assets/images/nat-6-small.jpg');
+
+      @include highResolution {
+        background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light, .85),
+            rgba($color-primary-dark, .85)),
+          url('../../assets/images/nat-6.jpg');
+      }
     }
 
     &--3 {
       background-image: linear-gradient(to right bottom,
           rgba($color-tertiary-light, .85),
           rgba($color-tertiary-dark, .85)),
-        url('../../assets/images/nat-7.jpg');
+        url('../../assets/images/nat-7-small.jpg');
+
+      @include highResolution {
+        background-image: linear-gradient(to right bottom,
+            rgba($color-tertiary-light, .85),
+            rgba($color-tertiary-dark, .85)),
+          url('../../assets/images/nat-7.jpg');
+      }
     }
   }
 
@@ -162,7 +183,7 @@
   }
 }
 
-@include mediaQuery(tab-land) {
+@include onHoverNone {
   .card {
     height: auto;
     border-radius: 4px;
