@@ -1,6 +1,4 @@
 import React from 'react'
-import Nat8 from '../assets/images/nat-8.jpg'
-import Nat9 from '../assets/images/nat-9.jpg'
 import Heading2 from './headings/heading2.component'
 import BtnGreen from './buttons/button-green.component'
 
@@ -10,10 +8,14 @@ const Popup = () => {
       <div className="popup__content">
         <div className="popup__right">
           <div className="popup__img_container--1">
-            <img src={Nat8} alt="tour img" className='popup__img' />
+            <img src='https://ik.imagekit.io/ml22hal4lxj/images/nat-8_tfIE5UGxw.jpg?updatedAt=1641269873258'
+              alt="tour img"
+              className='popup__img' />
           </div>
           <div className="popup__img_container--2">
-            <img src={Nat9} alt="tour img" className='popup__img' />
+            <img src='https://ik.imagekit.io/ml22hal4lxj/images/nat-9_-t1WNVdLThrh.jpg?updatedAt=1641269876577'
+              alt="tour img"
+              className='popup__img' />
           </div>
         </div>
 

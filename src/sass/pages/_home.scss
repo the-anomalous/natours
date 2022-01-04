@@ -12,7 +12,7 @@
   background-image: linear-gradient(to right bottom,
       rgba(126, 213, 111, 0.6),
       rgba(39, 180, 133, 0.6)),
-    url('../../assets/images/nat-4-small.jpg');
+    url('https://ik.imagekit.io/ml22hal4lxj/images/nat-4-small_IyO8DkyvB.jpg?updatedAt=1641269869492');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +29,7 @@
     background-image: linear-gradient(to right bottom,
         rgba(126, 213, 111, 0.6),
         rgba(39, 180, 133, 0.6)),
-      url('../../assets/images/nat-4.jpg');
+      url('https://ik.imagekit.io/ml22hal4lxj/images/nat-4_G1CaaJ7mu.jpg?updatedAt=1641269907173');
   }
 
   @include mediaQuery(tab-port) {
@@ -71,7 +71,7 @@
   background-image: linear-gradient(105deg,
       rgba($color-white, .8) 50%,
       transparent 50%),
-    url('../../assets/images/nat-10.jpg');
+    url('https://ik.imagekit.io/ml22hal4lxj/images/nat-10_zarXUF2Pq.jpg?updatedAt=1641269910276');
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 2rem rgba($color-black, .2);
@@ -93,6 +93,6 @@
     background-image: linear-gradient(to right,
         rgba($color-white, .8) 100%,
         transparent),
-      url('../../assets/images/nat-10-small.jpg');
+      url('https://ik.imagekit.io/ml22hal4lxj/images/nat-10-small_cXINos9X-.jpg?updatedAt=1641269871913');
   }
 }

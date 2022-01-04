@@ -2,14 +2,6 @@ import React from 'react'
 import ButtonText from './buttons/button-text.component'
 import Heading2 from './headings/heading2.component'
 
-import photo1large from '../assets/images/nat-1-large.jpg'
-import photo2large from '../assets/images/nat-2-large.jpg'
-import photo3large from '../assets/images/nat-3-large.jpg'
-
-import photo1 from '../assets/images/nat-1-large.jpg'
-import photo2 from '../assets/images/nat-2-large.jpg'
-import photo3 from '../assets/images/nat-3-large.jpg'
-
 const About = () => {
   return (
     <section className='section-about'>
@@ -38,23 +30,26 @@ const About = () => {
         <div className="col-1-of-2">
           <div className="composition">
             <img
-              srcSet={`${photo1} 300w, ${photo1large} 1000w`}
+              srcSet='https://ik.imagekit.io/ml22hal4lxj/images/nat-1_z29l-oX57.jpg?updatedAt=1641269855705 300w, 
+              https://ik.imagekit.io/ml22hal4lxj/images/nat-1-large_XjkorTOmu.jpg?updatedAt=1641269880826 1000w'
               sizes='(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px'
-              src={photo1large}
+              src='https://ik.imagekit.io/ml22hal4lxj/images/nat-1-large_XjkorTOmu.jpg?updatedAt=1641269880826'
               alt="1"
               className="composition__photo composition__photo--ph-1" />
             
             <img
-              srcSet={`${photo2} 300w, ${photo2large} 1000w`}
+              srcSet='https://ik.imagekit.io/ml22hal4lxj/images/nat-2_a_9xIwhT5.jpg?updatedAt=1641269961543 300w,
+              https://ik.imagekit.io/ml22hal4lxj/images/nat-2-large_Z0GhBTnEA.jpg?updatedAt=1641269864505 1000w'
               sizes='(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px'
-              src={photo2large}
+              src='https://ik.imagekit.io/ml22hal4lxj/images/nat-2-large_Z0GhBTnEA.jpg?updatedAt=1641269864505'
               alt="2"
               className="composition__photo composition__photo--ph-2" />
             
             <img
-              srcSet={`${photo3} 300w, ${photo3large} 1000w`}
+              srcSet='https://ik.imagekit.io/ml22hal4lxj/images/nat-3_UBTBITZWk.jpg?updatedAt=1641269855461 300w,
+              https://ik.imagekit.io/ml22hal4lxj/images/nat-3-large_LmVoY2AnpLIo.jpg?updatedAt=1641269878778 1000w'
               sizes='(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px'
-              src={photo3large}
+              src='https://ik.imagekit.io/ml22hal4lxj/images/nat-3-large_LmVoY2AnpLIo.jpg?updatedAt=1641269878778'
               alt="3"
               className="composition__photo composition__photo--ph-3" />
           </div>

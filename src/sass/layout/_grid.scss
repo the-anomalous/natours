@@ -5,7 +5,7 @@
   @include clearfix;
 
   @include mediaQuery(tab-port) {
-    max-width: 65rem;
+    max-width: 55%;
   }
    
   @include mediaQuery(phone) {

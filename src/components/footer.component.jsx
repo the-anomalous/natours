@@ -1,18 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import LogoBig1x from '../assets/logos/logo-green-1x.png'
-import LogoBig2x from '../assets/logos/logo-green-2x.png'
-
-import LogoSmall1x from '../assets/logos/logo-green-small-1x.png'
-import LogoSmall2x from '../assets/logos/logo-green-small-2x.png'
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className="footer__logo-box">
         <picture className='footer__logo' >
-          <source srcSet={`${LogoSmall1x} 1x, ${LogoSmall2x} 2x`} media="(max-width:37.5em)" />
-          <img srcSet={`${LogoBig1x} 1x, ${LogoBig2x} 2x`} alt="Full Logo"/>
+          <source
+            srcSet='https://ik.imagekit.io/ml22hal4lxj/logos/logo-green-small-1x_e2UooWnn7.png?updatedAt=1641270003450 1x, 
+            https://ik.imagekit.io/ml22hal4lxj/logos/logo-green-small-2x_P1FZcZuqH.png?updatedAt=1641270003948 2x'
+            media="(max-width:37.5em)" />
+          <img
+            srcSet='https://ik.imagekit.io/ml22hal4lxj/logos/logo-green-1x_rk37RcCfg7G9.png?updatedAt=1641270015227 1x,
+          https://ik.imagekit.io/ml22hal4lxj/logos/logo-green-2x_tv3sb54YoR.png?updatedAt=1641270003135 2x'
+            alt="Full Logo" />
         </picture>
       </div>
 

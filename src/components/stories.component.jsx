@@ -5,9 +5,6 @@ import ButtonText from './buttons/button-text.component'
 import BackgroundVideo from './bg-video.component'
 import Heading2 from './headings/heading2.component'
 
-import Image8 from '../assets/images/nat-8.jpg'
-import Image9 from '../assets/images/nat-9.jpg'
-
 const Stories = () => {
   return (
     <section className='section-stories'>
@@ -17,7 +14,9 @@ const Stories = () => {
         we make people genuinely happy
       </Heading2>
 
-      <StoryCard img={Image8} caption='Mary Smith'>
+      <StoryCard
+        img='https://ik.imagekit.io/ml22hal4lxj/images/nat-8_tfIE5UGxw.jpg?updatedAt=1641269873258'
+        caption='Mary Smith'>
         <div className="story__text">
           <h3 className="heading-tertiary">
             I had the best ever week ith my family
@@ -29,7 +28,9 @@ const Stories = () => {
         </div>
       </StoryCard>
 
-      <StoryCard img={Image9} caption='Jason Wilson'>
+      <StoryCard
+        img='https://ik.imagekit.io/ml22hal4lxj/images/nat-9_-t1WNVdLThrh.jpg?updatedAt=1641269876577'
+        caption='Jason Wilson'>
         <div className="story__text">
           <h3 className="heading-tertiary">
             Wow! My life is completely different now
